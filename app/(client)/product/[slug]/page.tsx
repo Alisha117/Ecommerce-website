@@ -12,6 +12,7 @@ import { FiShare2 } from "react-icons/fi";
 import { RxBorderSplit } from "react-icons/rx";
 import { TbTruckDelivery } from "react-icons/tb";
 
+
 const ProductPage = async ({
   params,
 }: {
@@ -25,9 +26,9 @@ const ProductPage = async ({
   }
 
   return (
-    
-      <Container >
-        <div className="flex flex-col md:flex-row gap-10 py-10">
+
+    <Container >
+      <div className="flex flex-col md:flex-row gap-10 py-10">
         {product?.images && <ImageView images={product?.images} />}
         <div className="w-full md:w-1/2 flex flex-col gap-5">
           <div>
@@ -49,12 +50,12 @@ const ProductPage = async ({
           </p>
           <div className="flex items-center gap-2.5 lg:gap-5">
             <AddToCartButton
-              product={product}
+             product={product as any}
               className="bg-darkColor/80 text-white hover:bg-mauve-900 hoverEffect"
             />
-            <WishlistButton product={product} />  
+          <WishlistButton product={product as any} />
           </div>
-          <ProductCharacteristics product={product} />
+         <ProductCharacteristics product={product as any} />
           <div className="flex flex-wrap items-center justify-between gap-2.5 border-b border-b-gray-200 py-5 -mt-2">
             <div className="flex items-center gap-2 text-sm text-black hover:text-red-600 hoverEffect">
               <RxBorderSplit className="text-lg" />
@@ -94,9 +95,9 @@ const ProductPage = async ({
             </div>
           </div>
         </div>
-       </div>
-      </Container>
-    
+      </div>
+    </Container>
+
   );
 };
 

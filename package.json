@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "typegen": "npx sanity@latest schema extract && npx sanity@latest typegen generate",
-    "postinstall": "prisma skills sync || exit 0"
+    "typegen": "npx sanity@latest schema extract && npx sanity@latest typegen generate"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

@@ -352,7 +352,7 @@ export default function CheckoutPage() {
                         src={urlFor(
                           product.images[0]
                         ).url()}
-                        alt={product.name}
+                        alt={product.name || "Product"}
                         width={80}
                         height={80}
                         className="w-20 h-20 object-cover rounded-md"
@@ -372,8 +372,8 @@ export default function CheckoutPage() {
                     </div>
 
                     <Priceformatter
-                      amount={
-                        product.price * quantity
+                    amount={
+                     (product.price || 0) * quantity
                       }
                       className="font-semibold"
                     />

@@ -29,7 +29,7 @@ const AddToCartButton = ({product, className}:Props) => {
             </div>
         <div className='flex items-center justify-between border-t pt-1'>
             <span className='text-xs font-semibold'>SubTotal</span>
-            <Priceformatter amount={product ? product.price * itemCount : 0 }/>
+         <Priceformatter amount={(product.price ?? 0) * itemCount} />
         </div>
      </div> 
      : <Button onClick={()=>{

@@ -15,10 +15,7 @@ const FAQPage = () => {
           Frequently Asked Questions
         </h1>
         <Accordion
-          type="single"
-          collapsible
           className="w-full"
-          defaultValue="item-0"
         >
           {faqsData.map((faq, index) => (
             <AccordionItem

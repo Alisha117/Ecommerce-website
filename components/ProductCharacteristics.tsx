@@ -5,7 +5,7 @@ import { Product } from '@/sanity.types'
 
 const ProductCharacteristics = ({product}:{product:Product}) => {
   return (
-    <Accordion type="single" collapsible>
+    <Accordion>
         <AccordionItem >
 
                 {product?.name}: Characteristics
