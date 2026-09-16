@@ -59,7 +59,7 @@ const ProductCard = ({ product }: { product: Product }) => {
         </Link>
 
         {/* Price + Wishlist */}
-        <div className="flex items-center justify-between gap-1 w-full">
+        <div className="flex items-center gap-5 w-full">
 
           <PriceView
             className="text-xs md:text-lg"
