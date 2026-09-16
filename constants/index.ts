@@ -1,11 +1,11 @@
 export const headerData = [
-    {title: 'Home',href: "/"},
-    {title: 'Men',href: "/men"},
-    {title: 'Women',href: "/women"},
-    {title: 'kids',href: "/kids"},
-    {title: 'New',href: "/new"},
-    {title: 'Featured',href: "/featured"},
-    {title: 'Gift',href: "/gift"},
+    {title: 'Home', href: '/'},
+    {title: 'Men', href: '/men'},
+    {title: 'Women', href: '/women'},
+    {title: 'kids', href: '/kids'},
+    {title: 'New', href: '/new'},
+    {title: 'Featured', href: '/featured'},
+    {title: 'Gift', href: '/gift'}
 ];
 
 export const productType=[
@@ -13,7 +13,7 @@ export const productType=[
     {title: 'Jacket', value: 'jacket'},
     {title: 'Pants', value: 'pants'},
     {title: 'Hoodie', value: 'hoodie'},
-    {title: 'Short', value: 'short',}
+    {title: 'Short', value: 'short'}
 
 ];
 

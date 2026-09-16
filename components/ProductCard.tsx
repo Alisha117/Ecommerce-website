@@ -59,10 +59,10 @@ const ProductCard = ({ product }: { product: Product }) => {
         </Link>
 
         {/* Price + Wishlist */}
-        <div className="flex items-center justify-between gap-2 w-full">
+        <div className="flex items-center justify-between gap-1 w-full">
 
           <PriceView
-            className="text-sm md:text-lg"
+            className="text-xs md:text-lg"
             price={product?.price}
             discount={product?.discount}
           />
