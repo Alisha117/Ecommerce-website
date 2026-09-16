@@ -25,7 +25,7 @@ function ProductGridFallback() {
 
 export default function Home() {
   return (
-    <div className="p-10">
+ <div>
       <Container className="py-10">
 
         {/* Home Banner */}

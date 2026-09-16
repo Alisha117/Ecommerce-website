@@ -7,7 +7,7 @@ import { ShoppingCart } from 'lucide-react';
 import Link from 'next/link';
 const EmptyCart = () => {
   return (
-    <div className='py-10 md:py-20 bg-gradient-to-b from-blue-50 to-white flex items-center justify-center p-4 '>
+   <div className='py-5 md:py-15 bg-gradient-to-b from-blue-50 to-white flex items-center justify-center p-4 '>
        <motion.div
        initial={{opacity:0, y:20}}
        animate={{opacity:1, y:0}}

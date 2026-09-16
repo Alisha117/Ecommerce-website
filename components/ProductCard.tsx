@@ -9,7 +9,7 @@ import WishlistButton from './WishlistButton';
 
 const ProductCard = ({ product }: { product: Product }) => {
   return (
-    <div className="group w-full text-sm rounded-lg overflow-hidden bg-zinc-50">
+    <div className="group w-full max-w-full text-sm rounded-lg overflow-hidden bg-zinc-50 md:max-w-none">
 
       {/* Product Image */}
       <Link
@@ -17,7 +17,7 @@ const ProductCard = ({ product }: { product: Product }) => {
         className="block w-full"
       >
         <div className="bg-gradient-to-r from-zinc-200 via-zinc-300 to-zinc-200 overflow-hidden relative w-full">
-          
+
           {product?.images?.[0] && (
             <Image
               src={urlFor(product.images[0]).url()}
@@ -25,9 +25,8 @@ const ProductCard = ({ product }: { product: Product }) => {
               height={500}
               alt={product?.name || "product image"}
               priority
-              className={`w-full h-72 md:h-80 object-contain hoverEffect ${
-                product?.stock !== 0 ? "group-hover:scale-105" : ""
-              }`}
+              className={`w-full h-56 md:h-80 object-contain hoverEffect ${product?.stock !== 0 ? "group-hover:scale-105" : ""
+                }`}
             />
           )}
 
@@ -61,9 +60,9 @@ const ProductCard = ({ product }: { product: Product }) => {
 
         {/* Price + Wishlist */}
         <div className="flex items-center justify-between gap-2 w-full">
-          
+
           <PriceView
-            className="text-lg"
+            className="text-sm md:text-lg"
             price={product?.price}
             discount={product?.discount}
           />
